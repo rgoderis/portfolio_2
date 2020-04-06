@@ -1,10 +1,11 @@
 import React from 'react';
+import './style.css'
 
 function Header(){
-    let logo = '<RG/>'
+    let logo = '<R/G>'
     return(
-        <header className="navbar navbar-expand-lg navbar-dark bg-primary ">
-            <h1 className="text-white container">{logo}</h1>
+        <header className="navbar navbar-expand-lg navbar-dark header">
+            <span className="navbar-brand text-info mb-0 h1">{logo}</span>
         </header>
     )
 }
