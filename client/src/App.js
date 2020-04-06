@@ -6,6 +6,7 @@ import {
   Switch
 } from 'react-router-dom';
 import Home from './Pages/Home'
+import Header from './Components/Header'
 
 
 
@@ -14,6 +15,7 @@ class App extends React.Component {
   render(){
     return (
       <Router>
+        <Header/>
         <Switch>
           <Route path="/" component={Home}/>
         </Switch>
