@@ -13,9 +13,9 @@ function Main(){
                 <img src={headshot} alt="profile" className="img-thumbnail text-center p-0 m-0 w-25 border-0"/>
             </figure>
             <main className="container">
-                <h2 className="text-center mt-5 mb-5 text-white">Front End Developer and Caffeine Addict</h2>
+                <h3 className="text-center mt-5 mb-5 text-white">Front End Developer and Caffeine Addict</h3>
                 <section className="text-center">
-                    <p className="text-white">Full Stack JavaScript developer that excels in all work environments with a demonstrated ability to learn new skills and quickly adapt. 
+                    <p className="text-white">Front End JavaScript developer that excels in all work environments with a demonstrated ability to learn new skills and quickly adapt. 
                         Skilled with with front and back end languages as well as server side specific frameworks and databases. 
                         A quick learner that is enthusiastic in tackling new challenges with a passion for growing and developing as a programer.</p>
                 </section>

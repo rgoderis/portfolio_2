@@ -26,6 +26,7 @@ class ProjectsContainer extends React.Component{
         console.log(this.state.projects)
         return(
             <div className="jumbotron container text-center background">
+                <h2 className="text-white">Portfolio</h2>
                 <div>
                     <h4 className="text-white">{this.state.projects[this.state.currentProject].name}</h4>
                     <div className="row">
