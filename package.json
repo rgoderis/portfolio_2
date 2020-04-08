@@ -2,7 +2,7 @@
   "name": "portfolio_2",
   "version": "1.0.0",
   "description": "Second version of React portfolio page",
-  "main": "app.js",
+  "main": "server.js",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
