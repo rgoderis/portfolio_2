@@ -19,6 +19,13 @@ const projects = [
         "link": "https://mwatch.herokuapp.com/",
         "github": "https://github.com/rgoderis/mWatch",
         "description": "TV watchlist app that finds the most trending shows and where they are currently streaming"
+    },
+    {
+        "name": "Address Book",
+        "image": require("./images/AddressBook.png"),
+        "link": "https://immense-harbor-83008.herokuapp.com/",
+        "github": "https://github.com/rgoderis/addressBook_2.0",
+        "description": "Address book app that allows users to add and look up contacts"
     }
 ]
 
