@@ -3,7 +3,7 @@ import "./style.css"
 import headshot from "../../images/LowRezHeadshot.jpg"
 
 function Main(){
-    let clickListener = ()=>{
+    const clickListener = ()=>{
         window.open('mailto:rgoderis789@gmail.com?subject=Reaching Out');
     }
     return(
@@ -21,8 +21,8 @@ function Main(){
                 </section>
                 <section className="text-center">
                     <a href="rgoderis789@gmail.com" className="text-info btn btn-lg" onClick={clickListener}><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/ryan-goderis" className="text-info btn btn-lg"><i className="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/rgoderis" className="text-info btn btn-lg"><i className="fab fa-github-square"></i></a>
+                    <a href="https://www.linkedin.com/in/ryan-goderis" target="_blank" className="text-info btn btn-lg"><i className="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/rgoderis" target="_blank" className="text-info btn btn-lg"><i className="fab fa-github-square"></i></a>
                 </section>
             </main>
         </div>
