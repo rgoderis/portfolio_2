@@ -10,7 +10,7 @@ function Main(){
         <div className="jumbotron container mt-5 background-primary">
             <h1 className="text-center text-white">Ryan Goderis</h1>
             <figure className="text-center container">
-                <img src={headshot} alt="profile" className="img-thumbnail text-center p-0 m-0 w-25"/>
+                <img src={headshot} alt="profile" className="img-thumbnail text-center p-0 m-0 w-25 border-0"/>
             </figure>
             <main className="container">
                 <h2 className="text-center mt-5 mb-5 text-white">Front End Developer and Caffeine Addict</h2>

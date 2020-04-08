@@ -1,10 +1,11 @@
 import React from 'react';
-import projects from '../../projects'
+import projects from '../../projects';
+import './style.css'
 
 class ProjectsContainer extends React.Component{
     state={
         projects,
-        currentProject:0
+        currentProject:1
     }
     nextProject = ()=>{
         if(this.state.currentProject=== this.state.projects.length-1){
@@ -24,25 +25,23 @@ class ProjectsContainer extends React.Component{
     render(){
         console.log(this.state.projects)
         return(
-            <div className="jumbotron container text-center">
+            <div className="jumbotron container text-center background">
                 <div>
-                    <h4>{this.state.projects[this.state.currentProject].name}</h4>
-                    <img src={this.state.projects[this.state.currentProject].image} className="w-75" alt={this.state.projects[this.state.currentProject].name}/>
-                    <p>{this.state.projects[this.state.currentProject].description}</p>
+                    <h4 className="text-white">{this.state.projects[this.state.currentProject].name}</h4>
                     <div className="row">
-                        <div className="col-3">
-                            <button className="btn btn-lg bg-info" onClick={this.previousProject}>Previous Project</button>
+                        <div className="col-2">
+                            <button className="btn btn-lg bg-info mt-5 text-color" onClick={this.previousProject}><i className="fas fa-arrow-alt-circle-left"></i></button>
                         </div>
-                        <div className="col-3">
-                            <a className="btn btn-lg text-info" href={this.state.projects[this.state.currentProject].link} target="_blank" rel="noopener noreferrer" ><i className="fas fa-link"></i></a>
+                        <div className="col-8">
+                        <img src={this.state.projects[this.state.currentProject].image} className="w-100" alt={this.state.projects[this.state.currentProject].name}/>
                         </div>
-                        <div className="col-3">
-                            <a className="btn btn-lg text-info"  href={this.state.projects[this.state.currentProject].github} target="_blank" rel="noopener noreferrer" ><i className="fab fa-github-square"></i></a>
-                        </div>
-                        <div className="col-3">
-                            <button className="btn btn-lg bg-info" onClick={this.nextProject}>Next Project</button>
+                        <div className="col-2">
+                            <button className="btn btn-lg bg-info mt-5 text-color" onClick={this.nextProject}><i className="fas fa-arrow-alt-circle-right"></i></button>
                         </div>
                     </div>
+                    <p className="px-5 text-white">{this.state.projects[this.state.currentProject].description}</p>
+                    <a className="btn btn-lg bg-info mx-5 text-color" href={this.state.projects[this.state.currentProject].link} target="_blank" rel="noopener noreferrer" ><i className="fas fa-link"></i></a>
+                    <a className="btn btn-lg bg-info mx-5 text-color"  href={this.state.projects[this.state.currentProject].github} target="_blank" rel="noopener noreferrer" ><i className="fab fa-github-square"></i></a>
                 </div>
             </div>
         )
