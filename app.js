@@ -16,7 +16,7 @@ app.use(cookieParser());
 app.use(routes)
 
 if (process.env.NODE_ENV === "production") {
-   app.use(express.static(path.join(__dirname, '../build')));
+   app.use(express.static(path.join(__dirname, './client/build')));
   };
 
 app.listen(PORT, function(){
