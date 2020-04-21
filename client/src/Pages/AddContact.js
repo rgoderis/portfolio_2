@@ -79,9 +79,9 @@ class AddContact extends React.Component{
         return(
             <div className="container">
                 {this.state.contactAdded?
-                <h1 className="text-center">New Contact Added</h1>:
+                <h1 className="text-center">Contact Information Added</h1>:
                 <div>
-                <h1 className="text-center">{this.state.contactAdded?("Added New Contact"):("New Contact")}</h1>
+                <h2 className="text-center mb-5 mt-5">Enter Your Contact Information Below</h2>
                 <form>
                     <div className="form-group">
                         <div className="row">
@@ -187,7 +187,7 @@ class AddContact extends React.Component{
                             </div>
                         </div>
                     </div>
-                    <button className="btn btn-info btn-lg text-color" onClick={this.handleFormSubmit}>Add Contact</button>
+                    <button className="btn btn-info btn-lg text-color mt-2" onClick={this.handleFormSubmit}>Add Contact</button>
                 </form>
                 </div>
                 }
