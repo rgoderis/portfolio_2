@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import Home from './Pages/Home'
 import AddContact from './Pages/AddContact'
+import Resume from "./Pages/Resume"
 import Header from './Components/Header'
 
 
@@ -19,7 +20,8 @@ class App extends React.Component {
         <Header/>
         <Switch>
           <Route exact path="/" component={Home}/>
-          <Route exact path="/Add" component={AddContact}/>
+          <Route exact path="/AddContact" component={AddContact}/>
+          <Route exact path="/Resume" component={Resume}/>
           <Route component={Home}/>
         </Switch>
       </Router>
