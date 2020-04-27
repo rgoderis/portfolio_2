@@ -17,10 +17,10 @@ function Header(){
                         <Link to="/" className="float-right nav-link text-info">Portfolio</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/AddContact" className="float-right nav-link text-info">Add Contact</Link>
+                      <Link to="/Resume" className="float-right nav-link text-info">Resume</Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="/Resume" className="float-right nav-link text-info">Resume</Link>
+                        <Link to="/Contact" className="float-right nav-link text-info">Contact</Link>
                     </li>
                 </ul>
             </div>

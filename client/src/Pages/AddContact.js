@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios'
 import Input from '../Components/Input'
+import "./style.css"
 
 class AddContact extends React.Component{
     state = {
@@ -54,17 +55,18 @@ class AddContact extends React.Component{
         }
     }
 
-    componentDidMount(){
-        this.checkContact()
+    clickListener = ()=>{
+        window.open('mailto:rgoderis789@gmail.com?subject=Reaching Out');
     }
+
     render(){
         return(
             <div className="container">
                 {this.state.contactAdded?
-                <h1 className="text-center">Contact Information Added</h1>:
+                <h1 className="text-center">Thanks for sending your information, I will get back with you ASAP!</h1>:
                 <div>
-                <h2 className="text-center mb-5 mt-5">Interested in Hearing More?</h2>
-                <h3>Email me by clicking here or fill out the information below and I will respond ASAP!</h3>
+                <h2 className="text-center mt-5">Interested In Hearing More?</h2>
+                <h3 className="text-center mb-5 mt-3">Send me an email me by <span className="clickable" onClick={this.clickListener}>clicking here</span> or fill out the information below.</h3>
                 <form>
                     <div className="form-group">
                         <div className="row">

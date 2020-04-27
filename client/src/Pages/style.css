@@ -1,3 +1,6 @@
 .background-primary{
     background-color: rgb(70, 70, 70);
 }
+.clickable:hover {
+    color: lightseagreen;
+}
