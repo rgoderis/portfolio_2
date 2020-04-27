@@ -1,6 +1,9 @@
 import React from 'react'
 import "./style.css"
 import headshot from "../../images/LowRezHeadshot.jpg"
+import {Link} from "react-router-dom"
+import "./style.css"
+
 
 function Main(){
     const clickListener = ()=>{
@@ -24,6 +27,7 @@ function Main(){
                     <a href="https://www.linkedin.com/in/ryan-goderis" target="_blank" rel="noopener noreferrer" className="text-info btn btn-lg"><i className="fab fa-linkedin"></i></a>
                     <a href="https://github.com/rgoderis" target="_blank" rel="noopener noreferrer" className="text-info btn btn-lg"><i className="fab fa-github-square"></i></a>
                 </section>
+                <h5 className="text-center text-white">Interested in hearing more? Please send me a <Link to="/Contact" className="link">message</Link> or check out my <Link to="/Resume" className="link">resume</Link>!</h5>
             </main>
         </div>
     )
